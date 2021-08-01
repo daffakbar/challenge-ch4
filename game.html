@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let player = prompt("What do you choose batu, gunting atau kertas ");
+      let com = Math.random();
+      // let com = Math.random() * 3;
+      // [batu,gunting,kertas]
+
+      console.log("Player memilih = " + player);
+      console.log(com);
+
+      if (com < 0.3) {
+        //   console.log("Rock");
+        com = "batu";
+      } else if (com > 0.3 && com < 0.7) {
+        //   console.log("scisossor");\
+        com = "gunting";
+      } else {
+        //   console.log("Paper");
+        com = "kertas";
+      }
+      console.log("Com memilih = " + com);
+      //  ============
+      if (player == "batu") {
+        if (com == "batu") {
+          console.log("Seri");
+        } else if (com == "gunting") {
+          console.log("Anda Menang");
+        } else {
+          console.log("Anda Kalah :");
+        }
+      }
+      if (player == "gunting") {
+        if (com == "batu") {
+          console.log("Anda Kalah");
+        } else if (com == "gunting") {
+          console.log("Seri");
+        } else {
+          console.log("Anda Menangg ");
+        }
+      }
+      if (player == "kertas") {
+        if (com == "batu") {
+          console.log("Anda Menang");
+        } else if (com == "gunting") {
+          console.log("Anda Kalah");
+        } else {
+          console.log("Serii ");
+        }
+      }
+    </script>
+  </body>
+</html>
