@@ -49,4 +49,13 @@ body {
 .selectedColor {
   background-color: #c4c4c4;
 }
+
+.result {
+  background: #4c9654;
+  border-radius: 10px;
+  -webkit-transform: rotate(-28.87deg);
+          transform: rotate(-28.87deg);
+  color: #fff;
+  padding: 14px 15px 14px 15px;
+}
 /*# sourceMappingURL=styles.css.map */
