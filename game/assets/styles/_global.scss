@@ -44,6 +44,7 @@ body {
   border-radius: 10px;
   cursor: pointer;
   margin-top: 15px;
+  transition: 0.6s;
 }
 .selectedColor {
   background-color: #c4c4c4;
@@ -54,4 +55,13 @@ body {
   transform: rotate(-20.87deg);
   color: #fff;
   padding: 14px 15px 14px 15px;
+}
+.img-rps:hover {
+  background-color: #c4c4c4;
+}
+.btn-reset {
+  transition: 0.5s;
+}
+.btn-reset:hover {
+  transform: rotate(180deg);
 }

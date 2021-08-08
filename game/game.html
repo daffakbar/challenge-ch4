@@ -11,6 +11,10 @@
     />
 
     <link rel="stylesheet" href="assets/styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="http://anijs.github.io/lib/anicollection/anicollection.css"
+    />
   </head>
   <body>
     <div class="back">
@@ -41,6 +45,7 @@
               height="90px"
               class="img-rps"
               value="batu"
+              data-anijs="if: click, do: zoomIn animated, to: #output"
             />
           </div>
           <div class="card-rps">
@@ -50,6 +55,7 @@
               width="90px"
               height="90px"
               class="img-rps"
+              data-anijs="if: click, do: zoomIn animated, to: #output"
             />
           </div>
           <div class="card-rps">
@@ -59,6 +65,7 @@
               width="90px"
               height="90px"
               class="img-rps"
+              data-anijs="if: click, do: zoomIn animated, to: #output"
             />
           </div>
         </div>
@@ -66,13 +73,13 @@
           <div class="vs">
             <h1>VS</h1>
           </div>
-          <div class="menang result visually-hidden">
+          <div class="menang result visually-hidden custom-animation">
             <h1 class="">PLAYER WIN</h1>
           </div>
-          <div class="kalah visually-hidden result">
+          <div class="kalah visually-hidden result custom-animation">
             <h1>COM WIN</h1>
           </div>
-          <div class="seri visually-hidden result">
+          <div class="seri visually-hidden result custom-animation">
             <h1>DRAW</h1>
           </div>
         </div>
@@ -113,12 +120,16 @@
             alt="refresh"
             width="75px"
             height="75px"
-            class="p-3"
+            class="p-3 btn-reset"
           />
         </div>
       </div>
     </div>
     <script src="main.js"></script>
+    <script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script>
+
+    <!-- Include to use $addClass, $toggleClass or $removeClass -->
+    <script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

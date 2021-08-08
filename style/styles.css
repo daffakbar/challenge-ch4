@@ -33,13 +33,7 @@ body {
 }
 
 .bg-image {
-  background: radial-gradient(
-      136.03% 54.57% at 50% 48.04%,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(0, 0, 0, 0) 60.63%,
-      #080a0b 99.74%
-    ),
-    url("../images/assets/main-bg.jpg");
+  background: radial-gradient(136.03% 54.57% at 50% 48.04%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080a0b 99.74%), url("../images/assets/main-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -75,14 +69,14 @@ body {
   bottom: 0%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   bottom: 5%;
   -webkit-animation: scroll-down;
-  animation: scroll-down;
+          animation: scroll-down;
   -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+          animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes scroll-down {
@@ -188,13 +182,7 @@ body {
 }
 
 .system-bg {
-  background: radial-gradient(
-      33.26% 45% at 64.32% 47.1%,
-      rgba(255, 255, 255, 0) 3.36%,
-      rgba(0, 0, 0, 0) 19.22%,
-      #080a0b 99.74%
-    ),
-    url("../images/assets/requirements.png");
+  background: radial-gradient(33.26% 45% at 64.32% 47.1%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 19.22%, #080a0b 99.74%), url("../images/assets/requirements.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -279,7 +267,7 @@ body {
 
 .topscore-bg .square-review img {
   -webkit-box-shadow: 0px 2px 6px rgba(47, 83, 151, 0.1);
-  box-shadow: 0px 2px 6px rgba(47, 83, 151, 0.1);
+          box-shadow: 0px 2px 6px rgba(47, 83, 151, 0.1);
   border-radius: 100px;
   width: 60px;
   height: 60px;
@@ -338,19 +326,8 @@ body {
 }
 
 .newsteller-bg .img-news {
-  background: radial-gradient(
-    51.83% 41.42% at 48.17% 50%,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(0, 0, 0, 0) 67.58%,
-    #060708 99.74%
-  );
-  background-image: radial-gradient(
-      51.83% 41.42% at 48.17% 50%,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(0, 0, 0, 0) 67.58%,
-      #060708 99.74%
-    ),
-    url("../images/assets/newsteller.png");
+  background: radial-gradient(51.83% 41.42% at 48.17% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 67.58%, #060708 99.74%);
+  background-image: radial-gradient(51.83% 41.42% at 48.17% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 67.58%, #060708 99.74%), url("../images/assets/newsteller.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -500,7 +477,7 @@ footer span {
 @media screen and (max-width: 576px) {
   footer .link-footer {
     -ms-flex-pack: distribute !important;
-    justify-content: space-around !important;
+        justify-content: space-around !important;
   }
   footer .f-text {
     margin-left: 10px;

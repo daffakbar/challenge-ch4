@@ -44,6 +44,8 @@ body {
   border-radius: 10px;
   cursor: pointer;
   margin-top: 15px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .selectedColor {
@@ -53,9 +55,23 @@ body {
 .result {
   background: #4c9654;
   border-radius: 10px;
-  -webkit-transform: rotate(-28.87deg);
-          transform: rotate(-28.87deg);
+  -webkit-transform: rotate(-20.87deg);
+          transform: rotate(-20.87deg);
   color: #fff;
   padding: 14px 15px 14px 15px;
+}
+
+.img-rps:hover {
+  background-color: #c4c4c4;
+}
+
+.btn-reset {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-reset:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 /*# sourceMappingURL=styles.css.map */
