@@ -1,0 +1,48 @@
+.system-bg {
+  background: radial-gradient(
+      33.26% 45% at 64.32% 47.1%,
+      rgba(255, 255, 255, 0) 3.36%,
+      rgba(0, 0, 0, 0) 19.22%,
+      #080a0b 99.74%
+    ),
+    url("../images/assets/requirements.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+
+  table {
+    margin-top: 40px;
+    tr {
+      td {
+        border: 1px solid #363636 !important;
+      }
+    }
+  }
+
+  .text-system {
+    font-size: 56px;
+    margin-top: -30px;
+    letter-spacing: 3px;
+  }
+
+  h1 {
+    color: #ffb548;
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+  h3 {
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+  }
+}
+@media screen and (max-width: 576px) {
+  .system-bg {
+    .text-system {
+      font-size: 30px;
+      margin-top: 5px;
+      letter-spacing: 3px;
+    }
+  }
+}

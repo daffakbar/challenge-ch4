@@ -1,0 +1,37 @@
+.features-bg {
+  background-image: url("../images/assets/features.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  h3 {
+    font-size: 24px;
+
+    letter-spacing: 2px;
+  }
+  h1 {
+    font-size: 56px;
+
+    letter-spacing: 3px;
+  }
+  p {
+    font-size: 18px;
+  }
+  ul {
+    li::marker {
+      background-color: white;
+      color: white;
+      border-radius: 50%;
+
+      height: 10px;
+      font-size: 35px;
+      width: 10px;
+    }
+    li {
+      color: #ffb548;
+      font-size: 24px;
+
+      letter-spacing: 2px;
+    }
+  }
+}

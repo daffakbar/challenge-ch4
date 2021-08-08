@@ -1,0 +1,78 @@
+.bg-image {
+  background: radial-gradient(
+      136.03% 54.57% at 50% 48.04%,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0) 60.63%,
+      #080a0b 99.74%
+    ),
+    url("../images/assets/main-bg.jpg");
+  background-size: cover;
+  background-position: center;
+
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  h1 {
+    font-weight: bold;
+    font-size: 72px;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+  }
+  h3 {
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+  }
+  .btn-play {
+    font-weight: bold;
+    font-size: 16px;
+    color: #1a1917;
+    padding: 15px 70px;
+    background: linear-gradient(194.68deg, #ffb548 11.27%, #f3af34 90.4%);
+    border-radius: 4px;
+  }
+  .btn-story {
+    cursor: pointer;
+    position: absolute;
+    // display: block;
+    // position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    bottom: 5%;
+    animation: scroll-down;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    @keyframes scroll-down {
+      0% {
+        bottom: 5%;
+      }
+      50% {
+        bottom: 7.5%;
+      }
+      100% {
+        margin-top: 5%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .bg-image {
+    h1 {
+      font-weight: bold;
+      font-size: 32px;
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+    }
+    h3 {
+      font-size: 18px;
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+    }
+    button {
+      padding: 15px 70px;
+    }
+  }
+}
