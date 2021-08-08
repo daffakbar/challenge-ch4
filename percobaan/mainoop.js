@@ -3,33 +3,39 @@ let com = document.querySelectorAll("#com div img"); //get array com
 let output = document.querySelectorAll("#output div"); //get array hasil
 const btnReset = document.getElementById("btnReset"); //get button reset
 
-// console.log(player);
-// console.log(com);
 function iRandom() {
   return Math.floor(Math.random() * 3);
 }
 // let pickPlayer;
 let pickCom = iRandom();
+let action = true;
 for (let index = 0; index < player.length; index++) {
   player[index].addEventListener("click", () => {
-    player[index].classList.toggle("selectedColor");
-    com[pickCom].classList.add("selectedColor");
-    console.log(index);
-    console.log(pickCom);
-    let Hasil = new Game(index, pickCom);
-    let result = Hasil.compare();
-    // console.log(result);
-    Hasil.displayOutput(result);
-    Hasil.reset();
-    // console.log(aa);
+    if (action) {
+      player[index].classList.toggle("selectedColor");
+      com[pickCom].classList.add("selectedColor");
+      // console.log(index);
+      // console.log(pickCom);
+      let Hasil = new Game(index, pickCom);
+      let result = Hasil.compare();
+      // console.log(result);
+      Hasil.displayOutput(result);
+      Hasil.reset();
+      // console.log(aa);
+      action = false;
+    } else {
+      alert("Silahkan klik tombol reset");
+      // action = true;
+    }
   });
 }
-console.log(pickCom);
+// console.log(pickCom);
 class Game {
   constructor(player, com) {
     this.player = player;
     this.com = com;
   }
+  start() {}
   // 0batu, 1kertas, 2gunting
   compare() {
     let result;
@@ -46,6 +52,7 @@ class Game {
     }
     return result;
   }
+
   displayOutput(result) {
     for (let index = 0; index < output.length; index++) {
       if (output[index].classList.contains(result)) {
@@ -63,15 +70,11 @@ class Game {
       com.forEach((element) => {
         element.classList.remove("selectedColor");
       });
-      // for (let i = 1; i < btnReset.length; i++) {
-      //   output[0].classList.remove("visually-hidden");
-      //   output[i].classList.add("visually-hidden");
-      //   console.log(i);
-      // }
       output.forEach((element) => {
         element.classList.add("visually-hidden");
       });
       output[0].classList.remove("visually-hidden");
+      action = true;
     });
   }
 }
